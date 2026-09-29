@@ -1,0 +1,10 @@
+title: Fixed Structure Research
+subtitle: Trade the structure. Understand the market.
+description: A living illustrated research notebook about fixed logarithmic market structure, structural trading, TOTAL market-cap behaviour, and the 100-period SMA.
+theme: minima
+header_pages:
+  - STRUCTURE.md
+  - TRADING.md
+  - MARKET.md
+  - ASSETS.md
+  - OBSERVATIONS.md
