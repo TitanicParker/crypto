@@ -1,6 +1,8 @@
 title: Fixed Structure Research
 subtitle: Trade the structure. Understand the market.
 description: A living illustrated research notebook about fixed logarithmic market structure, structural trading, TOTAL market-cap behaviour, and the 100-period SMA.
+url: "https://titanicparker.github.io"
+baseurl: "/crypto"
 theme: minima
 header_pages:
   - STRUCTURE.md
