@@ -324,4 +324,4 @@ It does not claim that the TOTAL / 100-SMA hypothesis is proven.
 
 It defines the world clearly enough that those empirical questions can be tested without changing the world after seeing the answers.
 
-[Back to the structure ->](STRUCTURE.md) · [Enter the trading machine ->](TRADING.md) · [Understand the market ->](MARKET.md)
+[Back to the structure ->](STRUCTURE.md) · [Machine v0.1 ->](MACHINE_SPEC.md) · [Enter the trading machine ->](TRADING.md) · [Understand the market ->](MARKET.md)
