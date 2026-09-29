@@ -6,6 +6,7 @@ baseurl: "/crypto"
 theme: minima
 header_pages:
   - STRUCTURE.md
+  - FINITE_WORLD.md
   - TRADING.md
   - MARKET.md
   - ASSETS.md
