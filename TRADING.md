@@ -3,190 +3,107 @@ layout: page
 title: Trading Method
 ---
 
-# Side One — trading the structure
+<div class="kicker">Side one · mechanical method</div>
 
-This side asks a deliberately testable question:
+# Every level is a decision.
 
-> **Can the fixed structural ladder be traded mechanically enough to survive historical measurement and realistic costs?**
+<p class="lede"><strong>Next rung up or next rung down.</strong> The primitive trade is one adjacent structural move. Larger paths are built from successive decisions, not guessed destinations.</p>
 
-It does not begin by assuming the answer is yes.
+<figure class="instrument">
+<svg viewBox="0 0 1000 430" role="img" aria-label="Trading decision at a structural level with adjacent targets and local child-yellow stops">
+  <rect width="1000" height="430" fill="#090a0d"/>
+  <line x1="90" y1="70" x2="910" y2="70" stroke="#2f7cff" stroke-width="2"/>
+  <line x1="90" y1="215" x2="910" y2="215" stroke="#fff" stroke-width="4"/>
+  <line x1="90" y1="360" x2="910" y2="360" stroke="#2f7cff" stroke-width="2"/>
+  <line x1="90" y1="165" x2="910" y2="165" stroke="#ffd400" stroke-width="2"/>
+  <line x1="90" y1="265" x2="910" y2="265" stroke="#ffd400" stroke-width="2"/>
+  <text x="105" y="55" fill="#2f7cff" font-family="monospace" font-size="18">adjacent target up</text>
+  <text x="105" y="200" fill="#fff" font-family="monospace" font-size="18">current decision level</text>
+  <text x="105" y="345" fill="#2f7cff" font-family="monospace" font-size="18">adjacent target down</text>
+  <text x="650" y="155" fill="#ffd400" font-family="monospace" font-size="16">upper child-yellow</text>
+  <text x="650" y="288" fill="#ffd400" font-family="monospace" font-size="16">lower child-yellow</text>
+  <path d="M500 210 L500 100" stroke="#2f7cff" stroke-width="5"/>
+  <polygon points="500,85 490,105 510,105" fill="#2f7cff"/>
+  <path d="M545 220 L545 330" stroke="#f5f7fb" stroke-width="3" opacity=".7"/>
+  <polygon points="545,345 535,325 555,325" fill="#f5f7fb"/>
+</svg>
+<figcaption>Parent decision in white. Adjacent targets in blue. Local child-yellow corridor in yellow.</figcaption>
+</figure>
 
-## The primitive idea: adjacent level to adjacent level
+## The primitive trade
 
-A structural level is a decision point.
+A one-level test asks one clean question:
 
-At the simplest level, the next meaningful destination is not an arbitrary percentage target. It is the **adjacent structural rung**.
+> From a valid structural decision, which predefined boundary is reached first: the adjacent target or the structural stop?
+
+That result can be measured historically without needing a story about what the market “should” do.
+
+## Child structure is local structure
+
+The parent ladder gives the larger decision. Recursive children give a tighter working corridor.
+
+A child level can define local invalidation, a stop, a trailing stop, a smaller interval, or the point at which one directional hypothesis no longer survives.
+
+The exact rule must be written before the path is scored.
+
+## Flat is a real state
+
+The method should not force exposure.
+
+Flat can be correct when a decision is unresolved, both sides have been invalidated, the rule calls for no entry, or realistic execution costs make the theoretical trade unusable.
+
+**Time spent flat is a measured result.**
+
+## Both directions at one decision
+
+Conceptually, one structural point can generate two competing hypotheses:
 
 ```text
-rung below ← current decision level → rung above
+long  → next rung up
+short → next rung down
 ```
 
-The smallest complete structural trade is therefore a **one-level trade**.
+For historical reverse engineering, both can be scored independently.
 
-If movement continues, a larger trend can be represented as a sequence of adjacent rung crossings rather than as one forecast made at the beginning.
+Live execution is different. Depending on venue and account rules, implementation may require separate accounts, subaccounts, hedge mode, or a single-net-position rule.
 
-## Flat is a position
+That execution choice must never be confused with the geometry itself.
 
-The method should not force constant exposure.
+## Gross is not net
 
-Being flat can be the correct state when:
+Keep three layers separate:
 
-- a structural decision has not resolved;
-- both directional ideas have been invalidated;
-- the market is inside a working area without a defined rule-based entry;
-- costs or execution conditions make the theoretical trade unattractive;
-- the research rule being tested explicitly calls for no position.
+**Structural result** — which predefined target or stop was reached first?
 
-Time spent flat is therefore something to **measure**, not something to hide.
+**Gross trading result** — what did the price move produce before costs?
 
-## Parent level and local working area
+**Executable net result** — what remains after fees, spread, slippage, funding and account constraints?
 
-A parent level can be surrounded by its local yellow-to-yellow corridor. This gives the trade a smaller decision area while leaving the parent ladder untouched.
+A theoretical backtest is not a live trading record.
 
-Conceptually:
+## Continuation is a separate test
 
-```text
-lower child-yellow
-        │
-        │   working area
-        │
-parent decision level
-        │
-        │   working area
-        │
-upper child-yellow
-```
+One successful level-to-level move does not prove that the next level will follow.
 
-The child yellows are mathematical consequences of the exact neighbouring parent bounds, not hand-fitted stop lines.
-
-## Natural child-level stops
-
-A simple research rule can use the relevant child level as an invalidation point for one side of a structural decision.
-
-For example, if a level is being tested in both directions, movement far enough into one side's child structure may remove the opposite hypothesis before the adjacent parent target is reached.
-
-Exactly which child constitutes a valid stop is a **trading rule** and must be written down before historical results are counted.
-
-## Structural trailing stops
-
-A continuation can be treated as a path through successive levels.
-
-Once a new structural rung is crossed and accepted, a trailing stop can migrate according to a predefined structural rule instead of an arbitrary price distance.
-
-The important research discipline is the same: define the migration rule before scoring the result.
-
-## One-level trade versus continuation
-
-These are different tests.
-
-### One-level test
-
-Ask only:
-
-> From a valid decision, was the adjacent target reached before the specified structural stop?
-
-### Continuation test
-
-Ask:
-
-> After one adjacent level was reached, did the same directional move continue through further structural rungs under a predefined trailing rule?
-
-A continuation winner must not be allowed to retrospectively rescue a failed one-level rule.
-
-## Recording structural paths
-
-A market path can be compressed into adjacent structural crossings.
-
-For example:
+A path can be compressed into adjacent crossings:
 
 ```text
 0.382 ↑ 0.500 ↑ 0.618 ↓ 0.500 ↓ 0.382
 ```
 
-That representation allows later questions such as:
+That lets us ask whether continuation, reversal and structural region have measurable differences.
 
-- How often does a crossing continue one more rung?
-- How often does it reverse immediately?
-- Do yellow, blue and white levels behave differently?
-- Does path behaviour differ by parent container?
+## What we eventually measure
 
-## The awkward practical question: both directions at one decision point
+- one-level target hit rate;
+- child-stop hit rate;
+- unresolved decisions;
+- gross result;
+- net result after realistic costs;
+- time spent flat;
+- differences by level type or structural region;
+- whether a structural trailing rule improves or worsens continuation results.
 
-The conceptual rule can treat the decision point as two competing directional hypotheses:
+The method begins as a rule set. Its effectiveness is an empirical question.
 
-```text
-long hypothesis  → next rung up
-short hypothesis → next rung down
-```
-
-That does **not** mean every exchange account can literally hold both positions at once.
-
-### Conceptual rule
-
-For historical research, both hypothetical positions can be opened from the same structural decision and scored independently until their predefined target or stop is hit.
-
-This answers a clean research question without pretending an exchange executed the trades.
-
-### Possible live implementations
-
-Depending on venue and account rules, a trader might use:
-
-- separate accounts;
-- subaccounts;
-- hedge mode where the venue supports simultaneous long and short positions;
-- one live position plus a separately tracked hypothetical opposite side;
-- a single net-position rule that chooses one side, provided that selection rule is explicitly defined and tested separately.
-
-These are **execution implementations**, not changes to the structural geometry.
-
-### Exchange and account limitations
-
-Actual execution can differ because of:
-
-- whether hedge mode exists;
-- margin mode and collateral rules;
-- minimum order sizes;
-- leverage constraints;
-- liquidation mechanics;
-- funding;
-- venue-specific fees;
-- spread and slippage;
-- market availability and data quality.
-
-A theoretical backtest that ignores these is not the same thing as an executable live strategy.
-
-## Gross result is not net result
-
-Historical reverse engineering should keep at least three layers separate:
-
-1. **Structural result** — which target or stop was reached first?
-2. **Gross trading result** — what would the price move have produced before costs?
-3. **Executable net result** — what remains after realistic fees, spread, slippage, funding and account constraints?
-
-Do not collapse those into a single number.
-
-## Questions the research should eventually answer
-
-- If every valid structural decision had been traded, what happened?
-- How many one-level targets were reached?
-- How often did the child-yellow stop remove one side?
-- How many decisions ended with neither side cleanly resolved?
-- What was the gross result?
-- What remained after realistic costs?
-- How much time was spent flat?
-- Did yellow, blue and white decisions behave differently?
-- Were particular structural regions materially different?
-- Did multi-level continuation add value after the one-level test was already satisfied?
-
-## What belongs in an observation
-
-Keep four things distinct:
-
-**Trading rule** — what the method said to do.  
-**Observation** — what price actually did.  
-**Measured result** — how the predefined test scored it.  
-**Interpretation** — what we think the result may mean.
-
-That separation is the foundation of the eventual historical study.
-
-Next: **[See the canonical asset ladders →](ASSETS.md)**
+[See the canonical ladders →](ASSETS.md) · [Open the evidence →](OBSERVATIONS.md)
