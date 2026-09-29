@@ -52,6 +52,8 @@ Use the same colour language as the structure itself:
 
 **white boundary · blue level · yellow 0.236/0.786 · magenta SMA100**
 
+The machine-readable vocabulary shared by trading and market research is defined in **[EVENT_SCHEMA.md](EVENT_SCHEMA.md)**.
+
 ## Observation fields
 
 Use only the fields that help the case:
@@ -82,7 +84,7 @@ source_image
 notes
 ```
 
-The notebook does not need every field every time.
+The notebook does not need every field every time. Trading decision records additionally use the Machine v0.1 fields for decision level, commitment boundaries, first boundary, surviving hypothesis, resolution, returns and chronology status.
 
 ## Status language
 
