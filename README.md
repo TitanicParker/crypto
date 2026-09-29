@@ -19,6 +19,6 @@ Start with **[the homepage](index.md)**.
 
 Core reading order:
 
-**[Structure](STRUCTURE.md) → [Trading](TRADING.md) / [Market](MARKET.md) → [Evidence](OBSERVATIONS.md)**
+**[Structure](STRUCTURE.md) → [Finite World](FINITE_WORLD.md) → [Trading](TRADING.md) / [Market](MARKET.md) → [Evidence](OBSERVATIONS.md)**
 
 Real chart evidence belongs in `charts/`. Keep strong examples, failures, counterexamples and unresolved cases.
