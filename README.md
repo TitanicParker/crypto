@@ -2,6 +2,8 @@
 
 **Trade the structure. Understand the market. Test both against evidence.**
 
+**Public field guide:** https://titanicparker.github.io/crypto/
+
 This repository is a small illustrated research publication about a fixed logarithmic market structure.
 
 It has two independent investigations:
