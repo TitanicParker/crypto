@@ -19,6 +19,9 @@ Start with **[the homepage](index.md)**.
 
 Core reading order:
 
-**[Structure](STRUCTURE.md) → [Finite World](FINITE_WORLD.md) → [Trading](TRADING.md) / [Market](MARKET.md) → [Evidence](OBSERVATIONS.md)**
+**[Structure](STRUCTURE.md) → [Finite World](FINITE_WORLD.md) → [Machine v0.1](MACHINE_SPEC.md) → [Experiment 1](EXPERIMENT_1.md) / [Market](MARKET.md) → [Evidence](OBSERVATIONS.md)**
 
 Real chart evidence belongs in `charts/`. Keep strong examples, failures, counterexamples and unresolved cases.
+
+
+Research integrity: **[Event Schema](EVENT_SCHEMA.md)** · **[Structural Provenance](PROVENANCE.md)**
