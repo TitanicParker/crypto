@@ -78,6 +78,10 @@ The same geometry can recurse inside any interval.
 
 [Learn the structure →](STRUCTURE.md)
 
+Before either investigation, the structure can be reduced to a finite mathematical world: ordered levels, recursive children to a fixed depth, a local five-point decision corridor, finite machine states and explicit transition rules.
+
+[Define the finite world →](FINITE_WORLD.md)
+
 ## Two investigations. One evidence standard.
 
 <div class="split">
