@@ -178,3 +178,7 @@ Observation date:
 ```
 
 The register is the map. The notebook is where movement gets recorded.
+
+## Provenance
+
+A fixed ladder and an ex-ante trading claim are not the same thing. The project records ladder freeze dates separately in **[PROVENANCE.md](PROVENANCE.md)**. Until a freeze date is established, earlier history is described as a fixed-ladder traversal study rather than an ex-ante backtest.
