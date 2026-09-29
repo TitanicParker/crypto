@@ -7,7 +7,9 @@ theme: minima
 header_pages:
   - STRUCTURE.md
   - FINITE_WORLD.md
+  - MACHINE_SPEC.md
   - TRADING.md
+  - EXPERIMENT_1.md
   - MARKET.md
   - ASSETS.md
   - OBSERVATIONS.md
