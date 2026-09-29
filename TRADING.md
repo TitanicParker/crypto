@@ -7,7 +7,7 @@ title: Trading Method
 
 # Every level is a decision.
 
-<p class="lede"><strong>Next rung up or next rung down.</strong> The primitive trade is one adjacent structural move. Larger paths are built from successive decisions, not guessed destinations.</p>
+<p class="lede"><strong>Next rung up or next rung down.</strong> The primitive trade is one adjacent structural move. Larger paths are built from successive decisions, not guessed destinations. The canonical executable grammar is <a href="MACHINE_SPEC.md">Machine v0.1</a>.</p>
 
 <figure class="instrument">
 <svg viewBox="0 0 1000 430" role="img" aria-label="Trading decision at a structural level with adjacent targets and local child-yellow stops">
@@ -44,7 +44,7 @@ The parent ladder gives the larger decision. Recursive children give a tighter w
 
 A child level can define local invalidation, a stop, a trailing stop, a smaller interval, or the point at which one directional hypothesis no longer survives.
 
-The exact rule must be written before the path is scored.
+For the primitive experiment, the exact rule is frozen in **Machine v0.1** before the path is scored.
 
 ## Flat is a real state
 
@@ -106,4 +106,4 @@ That lets us ask whether continuation, reversal and structural region have measu
 
 The method begins as a rule set. Its effectiveness is an empirical question.
 
-[See the canonical ladders →](ASSETS.md) · [Open the evidence →](OBSERVATIONS.md)
+[Read Machine v0.1 →](MACHINE_SPEC.md) · [Experiment 1 →](EXPERIMENT_1.md) · [See the canonical ladders →](ASSETS.md) · [Open the evidence →](OBSERVATIONS.md)
