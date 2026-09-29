@@ -3,13 +3,19 @@ layout: page
 title: Canonical Assets
 ---
 
-# Canonical fixed ladders
+<div class="kicker">Reference ladders</div>
 
-These are the established parent structures used by the project.
+# Fixed means fixed.
 
-Chart-displayed parent values are treated as canonical where available. Child levels used inside a smaller interval are always recalculated from the **exact neighbouring parent boundaries**.
+<p class="lede">These are the canonical parent structures used by the project. They are references, not levels to be refitted to current price action.</p>
 
-> These ladders are references, not levels to be refitted to current price action.
+Child levels inside a smaller interval are always recalculated from the **exact neighbouring parent boundaries**.
+
+> Current state can change. The ladder does not.
+
+## Quick index
+
+**BTC · ETH · SOL · TAO · TEL · ADA · AAVE · ALGO · TOTAL**
 
 ## SOL / USDT
 
@@ -157,9 +163,9 @@ Chart-displayed parent values are treated as canonical where available. Child le
 2       271573.38914
 ```
 
-## Asset note format
+## Current-state note
 
-When an asset is actively being watched, add a very small current-state note rather than building a dashboard:
+When an asset is actively being watched, keep its changing state compact:
 
 ```text
 Timeframe:
@@ -167,8 +173,8 @@ Parent container:
 Current interval:
 Current value:
 Normalized position:
-SMA100:              # only where relevant
+SMA100:
 Observation date:
 ```
 
-Current state is temporary. The canonical ladder above it is not.
+The register is the map. The notebook is where movement gets recorded.
