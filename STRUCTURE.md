@@ -96,4 +96,4 @@ asset
 
 That address is shared by both sides of the project.
 
-[Trade the structure →](TRADING.md) · [Understand the market →](MARKET.md)
+[Define the finite mathematical world →](FINITE_WORLD.md) · [Trade the structure →](TRADING.md) · [Understand the market →](MARKET.md)
