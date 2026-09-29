@@ -3,129 +3,86 @@ layout: page
 title: Understanding the Market
 ---
 
-# Side Two — understanding the market
+<div class="kicker">Side two · market condition</div>
 
-This side is not primarily an execution strategy.
+# The candles are volatile. The average is smooth.
 
-Its main object is the **TOTAL crypto market-cap chart**, its fixed structural ladder, and its relationship with the **100-period simple moving average**.
+<p class="lede">The principal object here is <strong>TOTAL crypto market cap</strong>, its fixed structural ladder, and the path of its 100-period simple moving average.</p>
 
-Think of TOTAL as **market weather**.
-
-It may help describe the condition in which individual assets are moving. It does not automatically alter their structural trading rules.
+<figure class="instrument">
+<svg viewBox="0 0 1100 500" role="img" aria-label="Volatile TOTAL movement around fixed structure with a smooth magenta 100 SMA">
+  <rect width="1100" height="500" fill="#090a0d"/>
+  <line x1="60" y1="80" x2="1040" y2="80" stroke="#fff" stroke-width="4"/>
+  <line x1="60" y1="170" x2="1040" y2="170" stroke="#ffd400" stroke-width="2"/>
+  <line x1="60" y1="250" x2="1040" y2="250" stroke="#2f7cff" stroke-width="2"/>
+  <line x1="60" y1="330" x2="1040" y2="330" stroke="#2f7cff" stroke-width="2"/>
+  <line x1="60" y1="420" x2="1040" y2="420" stroke="#fff" stroke-width="4"/>
+  <polyline points="80,390 130,355 180,410 230,290 280,330 330,240 380,295 430,210 485,255 540,190 600,245 660,175 720,205 780,150 840,210 900,165 960,185 1020,120"
+    fill="none" stroke="#f5f7fb" stroke-width="3"/>
+  <path d="M80 360 C180 350, 260 320, 360 300 S540 250, 650 230 S820 215, 900 210 S980 205, 1020 205"
+    fill="none" stroke="#ff2aa3" stroke-width="9"/>
+  <text x="800" y="245" fill="#ff2aa3" font-family="monospace" font-size="18">100 SMA · flattening</text>
+</svg>
+<figcaption>We are studying the smooth path, its displacement from structure, and the spells where it becomes nearly horizontal.</figcaption>
+</figure>
 
 ## Working hypothesis
 
-> **Volatile market behaviour, when smoothed through a 100-period simple moving average, may produce a smooth trajectory that remains meaningfully organised by a fixed logarithmic market structure.**
+> Volatile market behaviour, when smoothed through a 100-period simple moving average, may produce a smooth trajectory that remains meaningfully organised by a fixed logarithmic market structure.
 
 This is a hypothesis, not a conclusion.
 
-## Parallelism hypothesis
+## What we watch
 
-Price, market cap and/or the 100 SMA may enter sustained periods in which their net direction becomes approximately horizontal and therefore parallel to the fixed structural levels.
+**Expansion** — market cap moves away from the SMA.
 
-The object of interest is the **spell**, not a single instant of zero slope.
+**Contraction** — market cap moves back toward it.
 
-A useful event asks:
+**Convergence** — separation closes.
 
-- where in the structure the spell occurs;
-- how long it lasts;
-- whether the SMA entered while rising or falling;
-- whether market cap is above, below or crossing the SMA;
-- which structural level or interval is nearby;
-- how the spell ends;
-- whether it appears before a wider change in market behaviour.
+**Divergence** — separation grows.
+
+**Crossing / retest** — market cap moves through the SMA and tests it again.
+
+**Flattening** — the SMA loses net vertical direction.
+
+**Parallelism** — market cap or the SMA sustains an approximately horizontal path parallel to structural levels.
+
+The important object is the **spell**, not a single zero-slope instant.
 
 ## Primary timeframe
 
-The **daily 100 SMA** is currently the primary expression under study.
+The **daily 100 SMA** is the principal expression under study.
 
-Supporting higher intervals:
+Weekly and monthly charts provide higher-timeframe context. Lower intervals — 12h, 8h, 4h, 1h, 30m, 15m, 5m and 1m — may show smaller echoes, but we do not assume equal strength across them.
 
-- weekly;
-- monthly.
+## TOTAL is weather
 
-Supporting lower intervals:
+TOTAL can describe the broader condition in which assets are moving.
 
-- 12h;
-- 8h;
-- 4h;
-- 1h;
-- 30m;
-- 15m;
-- 5m;
-- 1m.
+It does **not** automatically change an asset's fixed ladder, change an execution rule, or turn a market observation into a trade signal.
 
-The same phenomenon may not have equal strength on every timeframe. Lower intervals may be noisy while still containing smaller echoes worth recording.
+That separation keeps the two investigations independently testable.
 
-## Expansion and contraction
+## Observation before interpretation
 
-The market can separate from the 100 SMA during expansion and later move back toward it during contraction or consolidation.
+<div class="split">
+  <div class="note market">
+    <span class="label market">OBSERVATION</span>
+    <p>The daily SMA remained inside a narrow vertical band for 41 bars while TOTAL crossed above and below it inside the same parent container.</p>
+  </div>
+  <div class="note">
+    <span class="label">INTERPRETATION</span>
+    <p>This may represent a sustained structural parallel spell.</p>
+  </div>
+</div>
 
-The research is interested in the geometry of that relationship, including:
-
-- displacement from the SMA;
-- convergence toward it;
-- renewed separation;
-- crossings;
-- retests;
-- SMA slope;
-- flattening;
-- sustained near-horizontal spells;
-- price or market-cap movement becoming approximately parallel to structural levels;
-- where all of those events occur inside fixed parent containers.
-
-## A useful visual sequence
-
-For a serious example, prefer:
-
-1. **Original TOTAL chart** — enough context to see the broader move.
-2. **Fixed overlay** — parent levels and recalculated children added without fitting.
-3. **Annotated zoom** — mark the SMA spell, crossing, convergence or divergence being discussed.
-4. **Observation note** — state what is visible before interpreting it.
-
-## Observation is not interpretation
-
-Example:
-
-**Observation:**  
-The daily SMA remained within a narrow vertical range for 41 bars while TOTAL moved above and below it inside the same parent container.
-
-**Interpretation:**  
-This may represent a structural parallel spell.
-
-**Hypothesis:**  
-Such spells may recur preferentially near particular structural regions.
-
-Those are three different statements and should remain visibly separate.
-
-## Minimum snapshot information
-
-A useful market snapshot should show:
-
-- asset or market index;
-- timeframe;
-- visible date range;
-- parent container;
-- visible structural levels;
-- recalculated child levels;
-- current market value;
-- current structural interval;
-- normalized position;
-- SMA100 value;
-- SMA slope state;
-- parallelism, convergence or divergence being studied.
+The first statement can be measured. The second can be argued. They are not the same thing.
 
 ## What would count against the idea?
 
-Examples worth keeping include:
+Keep examples where the SMA shows no stable relationship to fixed structure; where the apparent relationship disappears when exact parent boundaries are used; where convincing behaviour only appears after moving the structure; where strong examples fail to repeat; and where lower-timeframe patterns are indistinguishable from noise.
 
-- long SMA spells with no obvious structural relationship;
-- repeated crossings that show no stable behaviour around fixed levels;
-- apparently compelling examples that disappear when the exact parent boundaries are used;
-- behaviour that only looks convincing after changing the structure;
-- strong daily examples that fail to repeat across time;
-- lower-timeframe patterns that are indistinguishable from noise.
+Negative examples are evidence too.
 
-Negative examples are part of the research record, not mistakes to delete.
-
-Next: **[Read the observations →](OBSERVATIONS.md)**
+[Open the evidence →](OBSERVATIONS.md)
