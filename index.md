@@ -82,6 +82,10 @@ Before either investigation, the structure can be reduced to a finite mathematic
 
 [Define the finite world →](FINITE_WORLD.md)
 
+The primitive trading branch is now frozen as **Machine v0.1** and pre-registered as **Experiment 1**. Changes to its event grammar require a new machine version rather than rewriting the old test.
+
+[Read Machine v0.1 →](MACHINE_SPEC.md) · [Open Experiment 1 →](EXPERIMENT_1.md)
+
 ## Two investigations. One evidence standard.
 
 <div class="split">
