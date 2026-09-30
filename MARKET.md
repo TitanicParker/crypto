@@ -57,7 +57,7 @@ s(t) = structural position of the 100-day average
 d(t) = p(t) - s(t)
 ```
 
-describes where price is relative to the slow curve.
+describes the geometry between price and the slow curve.
 
 **100-day forcing**
 
@@ -65,7 +65,7 @@ describes where price is relative to the slow curve.
 q100(t) = p(t) - p(t - 100 days)
 ```
 
-describes the endpoint replacement pressure acting on that curve.
+describes the paired endpoint pressure acting on that curve.
 
 For a 100-day trailing mean:
 
@@ -73,7 +73,13 @@ For a 100-day trailing mean:
 dM/dt = [P(t) - P(t - 100 days)] / 100 days
 ```
 
-So the sign of the 100-day comparison determines whether the slow curve is being pulled upward or downward.
+So today's relation to 100 days ago determines the current sign of the SMA100 slope.
+
+That gives us a hard distinction:
+
+> **Displacement describes geometry. 100-day paired forcing describes slope mechanics.**
+
+Price can sit below the SMA while the SMA is still rising. Price can sit above the SMA while the SMA is already being forced downward.
 
 This is mechanical. It does not by itself prove anything about the Fibonacci structure.
 
@@ -103,6 +109,56 @@ The question is whether the smooth path itself repeatedly occupies, turns around
 
 The market can remain violently active while the slow curve stays orderly because many shorter movements can cancel inside the rolling window.
 
+## Read the market in order
+
+The research has to earn each claim before moving to the next one.
+
+At the hard right edge, begin with the simplest comparison:
+
+```text
+1. q100        positive or negative?
+2. Δq100       strengthening or weakening?
+3. d(t)        where is price relative to the slow curve?
+4. SMA slope   rising or falling?
+5. curvature   is that slope strengthening or deteriorating?
+6. structure   where is the event occurring?
+7. history     does this combined state behave unusually later?
+```
+
+The first two steps already create a primitive forcing cycle:
+
+```text
+q > 0, Δq > 0  → rising and strengthening
+q > 0, Δq < 0  → rising but weakening
+q < 0, Δq < 0  → falling and worsening
+q < 0, Δq > 0  → falling but recovering
+```
+
+State and transition pressure are different. The sign of `q100` tells us the present slope direction. The change in `q100` tells us whether the system is moving toward or away from a possible sign change.
+
+Only after those dynamics are identified do we ask where the event sits in the fixed structure.
+
+## From turn to barrel roll
+
+A turning sequence can be described without Fibonacci:
+
+```text
+SMA rising
+→ SMA still rising but curvature turns negative
+→ slope approaches zero
+→ SMA falls
+```
+
+with persistence rather than a single-bar flicker.
+
+That is the beginning of an algorithmic barrel-roll definition.
+
+The order matters:
+
+> **Detect the roll from the dynamics first. Then test its structural location.**
+
+We do not define a barrel roll because a smooth curve happens to sit near a white or yellow line.
+
 ## Cycle stage
 
 The same local movement may mean different things in different parts of a larger cycle.
@@ -113,6 +169,7 @@ We therefore watch the relationship between:
 structural position
 price/SMA displacement
 100-day forcing
+change in 100-day forcing
 SMA slope
 SMA curvature
 multiscale expansion/contraction
@@ -168,6 +225,18 @@ A real 100-day phenomenon should preserve its broad geometry across those repres
 ## What would make the idea interesting?
 
 Not smoothness alone.
+
+The claims now form a simple ladder:
+
+```text
+H1  persistent deterioration in q100 precedes major SMA turns
+H2  independently detected turns align unusually with fixed structural corridors
+H3  the effect belongs specifically to about 100 calendar days
+H4  nested expansion/contraction plus 100-day memory produces slow turns
+    whose geometry is non-randomly organised by the fixed structure
+```
+
+Every step can fail independently.
 
 Stronger evidence would require some combination of:
 
