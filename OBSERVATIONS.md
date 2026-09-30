@@ -15,6 +15,44 @@ A serious entry should read in this order:
 
 Do not make the reader cross a wall of prose before seeing the evidence.
 
+## TOTAL · 1D · 2024–2025 · roll around the previous-cycle white
+
+![TOTAL 1D spiral roll around the previous-cycle white](charts/2025-total-1d-spiral-roll.png)
+
+**CAPTION**
+
+TOTAL · 1D · 2024–2025. Previous-cycle anchors: `0 = $0.728T`, `1 = $3.010T`. Local corridor around the old white 1.000: lower recursive yellow `≈ $2.821T`, white `= $3.010T`, upper recursive yellow `≈ $3.297T`.
+
+**OBSERVATION**
+
+Price undergoes large expansion and contraction around the old 1.000 region. During the same period, the magenta daily SMA100 moves much more smoothly: it rises through the lower recursive yellow, crosses the old white boundary, and approaches the yellow in the upper neighbouring container before the larger roll develops.
+
+The relevant corridor straddles a shared white boundary: the lower yellow belongs to the lower container and the upper yellow belongs to the upper container.
+
+**INTERPRETATION**
+
+The event may be an example of volatile nested expansion/contraction drawing a smooth slow trajectory that is itself organised around fixed structure.
+
+Smoothness alone is expected from a 100-day average. The unresolved question is whether the structural placement of that smooth roll is unusual.
+
+**MEASURED RESULT**
+
+Not yet scored. Required next measurements include corridor entry, white crossing, closest approach to each yellow, SMA crest and trough, zero-slope dates, curvature, structural displacement `d(t)`, 100-day forcing `q100(t)`, multiresolution consistency, nearby-horizon controls and matched random corridors.
+
+**STATUS**
+
+<p class="status unresolved">UNRESOLVED</p>
+
+### Anchor reference
+
+![Previous TOTAL cycle high and low used for the backdated structure](charts/2021-2022-total-anchor-reference.png)
+
+The previous-cycle reference identifies the approximately `$3.010T` high and `$0.728T` low used for this fixed-ladder traversal study.
+
+Until structural provenance is established, this historical case should not be described as an ex-ante prediction.
+
+---
+
 ## Evidence block
 
 <div class="evidence-block">
