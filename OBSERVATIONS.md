@@ -37,7 +37,11 @@ Smoothness alone is expected from a 100-day average. The unresolved question is 
 
 **MEASURED RESULT**
 
-Not yet scored. Required next measurements include corridor entry, white crossing, closest approach to each yellow, SMA crest and trough, zero-slope dates, curvature, structural displacement `d(t)`, 100-day forcing `q100(t)`, multiresolution consistency, nearby-horizon controls and matched random corridors.
+Not yet scored.
+
+The roll must first be detected from the SMA dynamics without using the structural lines to define it. Only then should its location be compared with the yellow-white-yellow corridor.
+
+Required measurements include `q100`, change in `q100`, structural displacement `d(t)`, SMA slope, curvature, persistence, independently detected crest/trough and zero-slope dates, corridor entry, white crossing, closest approach to each yellow, multiresolution consistency, nearby-horizon controls and matched random corridors.
 
 **STATUS**
 
